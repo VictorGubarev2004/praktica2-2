@@ -53,7 +53,10 @@ def task8():
     	temperature_change = float(input("Введите изменение температуры в градусах Цельсия: "))
     	heat = mass * specific_heat * temperature_change
 	print(f"Количество теплоты: {heat} Дж")
-
+def task9():
+    	period = float(input("Введите период колебаний в секундах: "))
+    	frequency = 1 / period
+	print(f"Частота: {frequency} Гц")
 def main():
 	while True:
 		choice = task0()
@@ -75,6 +78,8 @@ def main():
 			task7()
 		elif choice == "8":
 			task8()
+		elif choice == "9":
+			task9()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
