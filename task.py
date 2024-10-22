@@ -47,7 +47,12 @@ def task7():
     	area = float(input("Введите площадь в квадратных метрах: "))
     	pressure = force / area
 	print(f"Давление: {pressure} Па")
-
+def task8():
+    	mass = float(input("Введите массу в килограммах: "))
+    	specific_heat = float(input("Введите удельную теплоёмкость (Дж/(кг·К)): "))
+    	temperature_change = float(input("Введите изменение температуры в градусах Цельсия: "))
+    	heat = mass * specific_heat * temperature_change
+	print(f"Количество теплоты: {heat} Дж")
 
 def main():
 	while True:
@@ -68,6 +73,8 @@ def main():
 			task6()
 		elif choice == "7":
 			task7()
+		elif choice == "8":
+			task8()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
