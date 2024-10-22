@@ -36,6 +36,13 @@ def task5():
     	speed = float(input("Введите скорость объекта в метрах в секунду: "))
     	energy = 0.5 * (mass * (speed)**2)
 	print(f"Кинетическая энергия: {energy} Дж")
+def task6():
+    	mass = float(input("Введите массу в килограммах: "))
+    	height = float(input("Введите высоту в метрах: "))
+    	g = float(input("Введите значение ускорения свободного падения (м/с²): ")) 
+    	energy = mass * g * height
+	print(f"Потенциальная энергия: {energy} Дж")
+
 
 def main():
 	while True:
@@ -52,6 +59,8 @@ def main():
 			task4()
 		elif choice == "5":
 			task5()
+		elif choice == "6":
+			task6()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
