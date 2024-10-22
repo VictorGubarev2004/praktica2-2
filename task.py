@@ -57,6 +57,11 @@ def task9():
     	period = float(input("Введите период колебаний в секундах: "))
     	frequency = 1 / period
 	print(f"Частота: {frequency} Гц")
+def task1o():
+    	radius = float(input("Введите радиус основания цилиндра в метрах: "))
+    	height = float(input("Введите высоту цилиндра в метрах: "))
+    	volume = 3.14159 * radius**2 * height
+	print(f"Объем цилиндра: {volume} кубических метров")
 def main():
 	while True:
 		choice = task0()
@@ -80,6 +85,8 @@ def main():
 			task8()
 		elif choice == "9":
 			task9()
+		elif choice == "10":
+			task10()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
