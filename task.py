@@ -57,7 +57,7 @@ def task9():
     	period = float(input("Введите период колебаний в секундах: "))
     	frequency = 1 / period
 	print(f"Частота: {frequency} Гц")
-def task1o():
+def task10():
     	radius = float(input("Введите радиус основания цилиндра в метрах: "))
     	height = float(input("Введите высоту цилиндра в метрах: "))
     	volume = 3.14159 * radius**2 * height
