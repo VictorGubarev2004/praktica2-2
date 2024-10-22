@@ -22,10 +22,15 @@ def task2():
     	acceleration = float(input("Введите ускорение в м/с^2: "))
     	mass = force / acceleration
 	print(f"Масса: {mass} кг")
-def convert_temperature():
+def task3():
 	fahrenheit = float(input("Введите температуру в градусах Фаренгейта: "))
     	celsius = (fahrenheit - 32) * 5.0 / 9.0
 	print(f"Температура: {celsius} °C")
+def task4():
+    	force = float(input("Введите силу в Ньютонах: "))
+    	distance = float(input("Введите расстояние в метрах: "))
+    	work = force * distance
+	print(f"Работа: {work} Дж")
 
 def main():
 	while True:
@@ -38,6 +43,8 @@ def main():
 			task2()
 		elif choice == "3":
 			task3()
+		elif choice == "4":
+			task4()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
