@@ -31,6 +31,11 @@ def task4():
     	distance = float(input("Введите расстояние в метрах: "))
     	work = force * distance
 	print(f"Работа: {work} Дж")
+def task5():
+	mass = float(input("Введите массу объекта в килограммах: "))
+    	speed = float(input("Введите скорость объекта в метрах в секунду: "))
+    	energy = 0.5 * (mass * (speed)**2)
+	print(f"Кинетическая энергия: {energy} Дж")
 
 def main():
 	while True:
@@ -45,6 +50,8 @@ def main():
 			task3()
 		elif choice == "4":
 			task4()
+		elif choice == "5":
+			task5()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
