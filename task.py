@@ -42,6 +42,11 @@ def task6():
     	g = float(input("Введите значение ускорения свободного падения (м/с²): ")) 
     	energy = mass * g * height
 	print(f"Потенциальная энергия: {energy} Дж")
+def task7():
+    	force = float(input("Введите силу в Ньютонах: "))
+    	area = float(input("Введите площадь в квадратных метрах: "))
+    	pressure = force / area
+	print(f"Давление: {pressure} Па")
 
 
 def main():
@@ -61,6 +66,8 @@ def main():
 			task5()
 		elif choice == "6":
 			task6()
+		elif choice == "7":
+			task7()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
