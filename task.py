@@ -17,6 +17,11 @@ def task1():
     time = float(input("Введите время в часах: "))
     speed = distance / time
 print(f"Скорость: {speed} км/ч")
+def task2():
+    force = float(input("Введите силу в Ньютонах: "))
+    acceleration = float(input("Введите ускорение в м/с^2: "))
+    mass = force / acceleration
+print(f"Масса: {mass} кг")
 
 def main():
 	while True:
@@ -25,6 +30,8 @@ def main():
 			break
 		elif choice == "1":
 			task1()
+		elif choice == "2":
+			task2()
 		else:
 			print("Эта задача пока не решена. Выберите другую.")
 if __name__ == "__main__":
